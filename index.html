@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Prosip Vending | Vending en Asturias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --negro: #111;
+      --verde: #1fa85b;
+      --gris-fondo: #f4f6f5;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--gris-fondo);
+      color: #333;
+    }
+
+    header {
+      background: var(--negro);
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--verde);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .box {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      border-top: 4px solid var(--verde);
+    }
+
+    .about {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 14px;
+      border: none;
+      background: var(--verde);
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      background: var(--negro);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <!-- LOGO -->
+      <img src="logo.png" alt="Prosip Vending" style="height:40px;">
+      <strong style="color:white;">Prosip Vending</strong>
+    </div>
+
+    <div>
+      <a href="#inicio">Inicio</a>
+      <a href="#about">Sobre Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </nav>
+</header>
+
+<section id="inicio">
+  <h2>Nuestras Máquinas</h2>
+
+  <div class="box" style="text-align:center; max-width:600px; margin:auto;">
+    <h3>🚧 Catálogo en mantenimiento</h3>
+    <p style="margin-top:15px; font-size:17px;">
+      Estamos actualizando nuestro catálogo de máquinas de vending.
+      <br><br>
+      Si quieres instalar una máquina en tu empresa o negocio en
+      <strong>Asturias</strong>, contáctanos y te asesoramos personalmente.
+    </p>
+  </div>
+</section>
+
+<section id="about">
+  <h2>Sobre Nosotros</h2>
+
+  <div class="about">
+    <p>
+      En <strong>Prosip Vending</strong> ayudamos a empresas, oficinas y negocios
+      a ofrecer un servicio de vending cómodo y rentable para sus clientes y empleados.
+      <br><br>
+      Prestamos servicio en <strong>Asturias</strong> y nos encargamos de todo el proceso:
+      instalación, mantenimiento y reposición.
+      <br><br>
+      <strong>Instalación gratuita, sin coste ni compromiso.</strong>
+    </p>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Solicita información</h2>
+
+  <p style="text-align:center; max-width:600px; margin:0 auto 30px;">
+    ¿Quieres instalar una máquina de vending en tu empresa, oficina o local en
+    <strong>Asturias</strong>?
+    <br><br>
+    La instalación es <strong>totalmente gratuita</strong>.
+    Escríbenos y te asesoramos sin compromiso.
+    <br><br>
+    <strong>Respondemos en menos de 24 horas.</strong>
+  </p>
+
+  <!-- FORMULARIO -->
+  <form action="https://formspree.io/f/TU_CODIGO_AQUI" method="POST">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+
+<footer>
+  <img src="logo.png" alt="Prosip Vending" style="height:50px; margin-bottom:10px;">
+  <p>© 2025 Prosip Vending · Asturias</p>
+</footer>
+
+</body>
+</html>
