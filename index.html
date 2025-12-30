@@ -20,22 +20,13 @@
       color: #333;
     }
 
-    <header>
-  <nav style="max-width:1100px; margin:auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:nowrap; padding:0 10px;">
-    <!-- Logo a la izquierda -->
-    <div style="display:flex; align-items:center; gap:12px;">
-      <img src="logo.png" alt="Prosip Vending" style="height:40px;">
-      <strong style="color:white;">Prosip Vending</strong>
-    </div>
-
-    <!-- Menú alineado a la derecha -->
-    <div style="display:flex; gap:25px;">
-      <a href="#inicio" style="color:white; text-decoration:none; font-weight:500;">Inicio</a>
-      <a href="#about" style="color:white; text-decoration:none; font-weight:500;">Sobre Nosotros</a>
-      <a href="#contacto" style="color:white; text-decoration:none; font-weight:500;">Contacto</a>
-    </div>
-  </nav>
-</header>
+    header {
+      background: var(--negro);
+      padding: 15px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
     nav {
       max-width: 1100px;
@@ -43,16 +34,17 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: nowrap;
     }
 
-    nav a {
+    nav .menu a {
       color: white;
       text-decoration: none;
-      margin-left: 20px;
+      margin-left: 25px;
       font-weight: 500;
     }
 
-    nav a:hover {
+    nav .menu a:hover {
       color: var(--verde);
     }
 
@@ -126,13 +118,13 @@
 
 <header>
   <nav>
-    <div style="display:flex; align-items:center; gap:12px;">
-      <!-- LOGO -->
+    <!-- Logo a la izquierda -->
+    <div>
       <img src="logo.png" alt="Prosip Vending" style="height:40px;">
-      <strong style="color:white;">Prosip Vending</strong>
     </div>
 
-    <div>
+    <!-- Menú alineado a la derecha -->
+    <div class="menu" style="display:flex; gap:25px;">
       <a href="#inicio">Inicio</a>
       <a href="#about">Sobre Nosotros</a>
       <a href="#contacto">Contacto</a>
