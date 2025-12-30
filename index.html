@@ -20,13 +20,22 @@
       color: #333;
     }
 
-    header {
-      background: var(--negro);
-      padding: 20px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
+    <header>
+  <nav style="max-width:1100px; margin:auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:nowrap; padding:0 10px;">
+    <!-- Logo a la izquierda -->
+    <div style="display:flex; align-items:center; gap:12px;">
+      <img src="logo.png" alt="Prosip Vending" style="height:40px;">
+      <strong style="color:white;">Prosip Vending</strong>
+    </div>
+
+    <!-- Menú alineado a la derecha -->
+    <div style="display:flex; gap:25px;">
+      <a href="#inicio" style="color:white; text-decoration:none; font-weight:500;">Inicio</a>
+      <a href="#about" style="color:white; text-decoration:none; font-weight:500;">Sobre Nosotros</a>
+      <a href="#contacto" style="color:white; text-decoration:none; font-weight:500;">Contacto</a>
+    </div>
+  </nav>
+</header>
 
     nav {
       max-width: 1100px;
